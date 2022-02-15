@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Password Manager"
+title: "Password Manager development notes"
 author: "Terry"
 categories: blog
 tags: []
