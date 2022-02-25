@@ -22,7 +22,7 @@ A small project, yet involves several skills in cipher, string manupilation and 
 
 [Github Repository of CLI version][repo link]  
 
-# Building a Web Interface
+## Building a Web Interface
 
 With a web interface the application is more accessible. I started building the web version of the orginal command line Password Manager, using purely Flask at first. Then rewrote the front end using React and Axios afterwards. The application is suppposed to be ran locally though. Eventually, Pytest and Jest were added to run unit tests.  
 The web version serves same functions as the command line app, using only minimial style sheet. But in the process, I can get my hands on various libraries to enchance my skills in Flask, Javascript, React, Axios, Pytest and Jest. And also need to review the project in a design aspect.
