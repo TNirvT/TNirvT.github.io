@@ -25,12 +25,13 @@ Technically the database can be setup on the same EC2 instance, however consider
 - Configure the root user name and password
 - Select storage type, e.g. hard disk or SSD, and size
 - Decide if public access is necessary
-- Setup the security options (firewall), here I need to allow ICMP between the RDS instance and EC2 instance, to keep the connect alive
+- Setup the security options (firewall), here I need to allow ICMP traffic between the RDS instance and EC2 instance, to keep the connect alive  
+
 As mentioned before, I use MySQL workbench to monitor the database behavior, and do some experiments, which is very handy.  
 
 ## Couldflare
 
-Couldflare provides a number of useful services in one place. I can buy domain name, and use it's DNS service to proxy domain name to my EC2 address. And also generate SSL/TLS certificates, which can be installed on Nginx on my EC2 server. So that the connections from client browser to Cloudflare, and from Cloudflare to AWS EC2 are fully protected.  
+Couldflare provides a number of useful services in one place. I can buy domain name, and use it's DNS service allows all traffic goes to Cloudflare with HTTPS connection, and proxied to my EC2 instance's address. And also generate SSL/TLS certificates, which can be installed on Nginx on the EC2 server. So that the connections from client browser to Cloudflare, and from Cloudflare to AWS EC2 are fully protected.  
 
 [Shoplist running on AWS][live link]  
 
